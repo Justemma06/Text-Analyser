@@ -29,7 +29,7 @@ function wordCounter(text) {
       });
       return wordCount;
   }
-  
+
   function offensiveWordFilter(offensiveWords, text){
     const array = text.split(" ");
     let emptyArray= [];
@@ -41,6 +41,14 @@ function wordCounter(text) {
       }
     });
     return emptyArray.join(" ")
+  }
+
+  function punctuationRemover(word){
+    let punctuations = [".",",",";","!","-","?",":"]
+    punctuations.forEach(function(element){
+       word = word.replace(element, "")
+    })
+    return word;
   }
 
 
