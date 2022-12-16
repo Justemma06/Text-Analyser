@@ -13,7 +13,8 @@ h2{
     font-weight: bold;
 }
 body{
-    background-color: salmon;
+    background-image: url(../img/cvfg.jpg);
+    /* background-color: salmon; */
 }
 .jk{
     color: red;
